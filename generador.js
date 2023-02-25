@@ -10,10 +10,10 @@ const centena2 = document.querySelector('#centena2');
 const decena2 = document.querySelector('#decena2');
 const unidad2 = document.querySelector('#unidad2');
 
-const millar3 = document.querySelector('#millar3');
-const centena3 = document.querySelector('#centena3');
-const decena3 = document.querySelector('#decena3');
-const unidad3 = document.querySelector('#unidad3');
+const respuesta = document.querySelector('#respuesta');
+
+let contador = 0;
+let resultado = null
 
 round.addEventListener('click', () => {
   millar1.innerHTML = crearNumeroRandom();
@@ -25,6 +25,11 @@ round.addEventListener('click', () => {
   centena2.innerHTML = crearNumeroRandom();
   decena2.innerHTML = crearNumeroRandom();
   unidad2.innerHTML = crearNumeroRandom();
+
+  console.log(unidad1.innerHTML, unidad2.innerHTML)
+  console.log(Number(unidad1.innerHTML) + Number(unidad2.innerHTML))
+
+  // millar1.classList.remove('noMostrar');
 })
 
 crearNumeroRandom = () => {

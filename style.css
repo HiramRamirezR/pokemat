@@ -1,4 +1,8 @@
 .respuesta {
   width: 10px;
 }
+
+.noMostrar {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
